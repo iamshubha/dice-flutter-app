@@ -7,6 +7,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var imageNumber = 4;
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.red,
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
                 child: Container(
                   child: FlatButton(
                                     child: Image.asset(
-                      'images/dice1.png',
+                      'images/dice$imageNumber.png',
                     ),onPressed: (){
                       print("Left one is pressed");
                     },
